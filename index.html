@@ -276,17 +276,35 @@
     <div class="all-download py-[65px]">
         <div class="container md:w-[1220px] mx-auto">
             <div class="vs-code-for-content">
-                <div class="columns-3 gap-8 w-[850px] m-auto">
+                <div class="grid grid-flow-col auto-cols-auto gap-5 w-[900px] m-auto">
                     <div class="download-btn">
                         <img src="./images/windows-logo.png" alt="" class="w-[100px] h-[100px] m-auto">
                         
-                        <button class="text-white w-full bg-[#0066b8] py-[13px] pr-[20px] pl-[40px] mt-[20px] mb-[5px] hover:bg-[#005ba4] relative before:bg-[url('images/download.svg')] before:absolute before:w-[20px] before:h-[20px] before:top-[15px] before:left-[130px]">Download<br><small>Windows 8,10,11</small></button>
-                        <table>
+                        <button class="text-white w-full bg-[#0066b8] py-[13px] pr-[20px] pl-[40px] mt-[20px] mb-[5px] hover:bg-[#005ba4] relative before:bg-[url('images/download.svg')] before:absolute before:w-[20px] before:h-[20px] before:top-[15px] before:left-[80px]">Download<br><small>Windows 8,10,11</small></button>
+                        <table class="mt-[16px]">
                             <tr>
                                 <td><strong>User Installer</strong></td>
-                                <td><a href="#">x64</a></td>
-                                <td><a href="#">x64</a></td>
-                                <td><a href="#">Arm64</a></td>
+                                <td><a href="#" class="bg-[#0066b8] text-[#fff] inline-block rounded-[2px] px-[3px] text-[12px]">x64</a></td>
+                                <td><a href="#" class="bg-[#0066b8] text-[#fff] inline-block rounded-[2px] px-[3px] text-[12px]">x64</a></td>
+                                <td><a href="#" class="bg-[#0066b8] text-[#fff] inline-block rounded-[2px] px-[3px] text-[12px]">Arm64</a></td>
+                            </tr>
+                            <tr>
+                                <td><strong>System Installer</strong></td>
+                                <td><a href="#" class="bg-[#0066b8] text-[#fff] inline-block rounded-[2px] px-[3px] text-[12px]">x64</a></td>
+                                <td><a href="#" class="bg-[#0066b8] text-[#fff] inline-block rounded-[2px] px-[3px] text-[12px]">x64</a></td>
+                                <td><a href="#" class="bg-[#0066b8] text-[#fff] inline-block rounded-[2px] px-[3px] text-[12px]">Arm64</a></td>
+                            </tr>
+                            <tr>
+                                <td><strong>.zip</strong></td>
+                                <td><a href="#" class="bg-[#0066b8] text-[#fff] inline-block rounded-[2px] px-[3px] text-[12px]">x64</a></td>
+                                <td><a href="#" class="bg-[#0066b8] text-[#fff] inline-block rounded-[2px] px-[3px] text-[12px]">x64</a></td>
+                                <td><a href="#" class="bg-[#0066b8] text-[#fff] inline-block rounded-[2px] px-[3px] text-[12px]">Arm64</a></td>
+                            </tr>
+                            <tr>
+                                <td><strong>CLI</strong></td>
+                                <td><a href="#" class="bg-[#0066b8] text-[#fff] inline-block rounded-[2px] px-[3px] text-[12px]">x64</a></td>
+                                <td><a href="#" class="bg-[#0066b8] text-[#fff] inline-block rounded-[2px] px-[3px] text-[12px]">x64</a></td>
+                                <td><a href="#" class="bg-[#0066b8] text-[#fff] inline-block rounded-[2px] px-[3px] text-[12px]">Arm64</a></td>
                             </tr>
                         </table>
                     </div>
@@ -294,12 +312,57 @@
                         <img src="./images/linux-logo.png" alt="" class="w-[100px] h-[100px] m-auto">
                         
                         <button class="text-white w-[49%] bg-[#0066b8] py-[13px] pr-[20px] pl-[20px] mt-[20px] mb-[5px] hover:bg-[#005ba4] relative before:bg-[url('images/download.svg')] before:absolute before:w-[20px] before:h-[20px] before:top-[15px] before:left-[40px]">.deb<br><small>Debian, Ubuntu</small></button>
-                        <button class="text-white w-[49%] bg-[#0066b8] py-[13px] pr-[20px] pl-[20px] mt-[20px] mb-[5px] hover:bg-[#005ba4] relative before:bg-[url('images/download.svg')] before:absolute before:w-[20px] before:h-[20px] before:top-[15px] before:left-[40px]">.rpm<br><small>Red Hat, Fedora, SUSE</small></button>
+                        <button class="text-white w-[49%] bg-[#0066b8] py-[13px] mt-[20px] mb-[5px] hover:bg-[#005ba4] relative before:bg-[url('images/download.svg')] before:absolute before:w-[20px] before:h-[20px] before:top-[15px] before:left-[40px]">.rpm<br><small>Red Hat, Fedora, SUSE</small></button>
+                        <table class="mx-auto mt-[16px]">
+                            <tr>
+                                <td><strong>.deb</strong></td>
+                                <td><a href="#" class="bg-[#0066b8] text-[#fff] inline-block rounded-[2px] px-[3px] text-[12px]">x64</a></td>
+                                <td><a href="#" class="bg-[#0066b8] text-[#fff] inline-block rounded-[2px] px-[3px] text-[12px]">Arm32</a></td>
+                                <td><a href="#" class="bg-[#0066b8] text-[#fff] inline-block rounded-[2px] px-[3px] text-[12px]">Arm64</a></td>
+                            </tr>
+                            <tr>
+                                <td><strong>.rpm</strong></td>
+                                <td><a href="#" class="bg-[#0066b8] text-[#fff] inline-block rounded-[2px] px-[3px] text-[12px]">x64</a></td>
+                                <td><a href="#" class="bg-[#0066b8] text-[#fff] inline-block rounded-[2px] px-[3px] text-[12px]">Arm32</a></td>
+                                <td><a href="#" class="bg-[#0066b8] text-[#fff] inline-block rounded-[2px] px-[3px] text-[12px]">Arm64</a></td>
+                            </tr>
+                            <tr>
+                                <td><strong>.tar.gz	</strong></td>
+                                <td><a href="#" class="bg-[#0066b8] text-[#fff] inline-block rounded-[2px] px-[3px] text-[12px]">x64</a></td>
+                                <td><a href="#" class="bg-[#0066b8] text-[#fff] inline-block rounded-[2px] px-[3px] text-[12px]">Arm32</a></td>
+                                <td><a href="#" class="bg-[#0066b8] text-[#fff] inline-block rounded-[2px] px-[3px] text-[12px]">Arm64</a></td>
+                            </tr>
+                            <tr>
+                                <td><strong>Snap</strong></td>
+                                <td colspan="3"><a href="#" class="bg-[#0066b8] text-[#fff] inline-block rounded-[2px] px-[3px] text-[12px]">Snap Store</a></td>
+                            
+                            </tr>
+                            <tr>
+                                <td><strong>CLI</strong></td>
+                                <td><a href="#" class="bg-[#0066b8] text-[#fff] inline-block rounded-[2px] px-[3px] text-[12px]">x64</a></td>
+                                <td><a href="#" class="bg-[#0066b8] text-[#fff] inline-block rounded-[2px] px-[3px] text-[12px]">Arm32</a></td>
+                                <td><a href="#" class="bg-[#0066b8] text-[#fff] inline-block rounded-[2px] px-[3px] text-[12px]">Arm64</a></td>
+                            </tr>
+                        </table>
                     </div>
                     <div class="download-btn">
                         <img src="./images/apple-logo.svg" alt="" class="w-[100px] h-[100px] m-auto">
                         
-                        <button class="text-white w-full bg-[#0066b8] py-[13px] pr-[20px] pl-[40px] mt-[20px] mb-[5px] hover:bg-[#005ba4] relative before:bg-[url('images/download.svg')] before:absolute before:w-[20px] before:h-[20px] before:top-[15px] before:left-[160px]">Mac<br><small>macOS 10.11+</small></button>
+                        <button class="text-white w-full bg-[#0066b8] py-[13px] pr-[20px] pl-[40px] mt-[20px] mb-[5px] hover:bg-[#005ba4] relative before:bg-[url('images/download.svg')] before:absolute before:w-[20px] before:h-[20px] before:top-[15px] before:left-[105px]">Mac<br><small>macOS 10.11+</small></button>
+                        <table class="mt-[16px]">
+                            <tr>
+                                <td><strong>.zip</strong></td>
+                                <td><a href="#" class="bg-[#0066b8] text-[#fff] inline-block rounded-[2px] px-[3px] text-[12px]">Intel chip</a></td>
+                                <td><a href="#" class="bg-[#0066b8] text-[#fff] inline-block rounded-[2px] px-[3px] text-[12px]">Apple silicon</a></td>
+                                <td><a href="#" class="bg-[#0066b8] text-[#fff] inline-block rounded-[2px] px-[3px] text-[12px]">Universal</a></td>
+                            </tr>
+                            <tr>
+                                <td><strong>CLI</strong></td>
+                                <td><a href="#" class="bg-[#0066b8] text-[#fff] inline-block rounded-[2px] px-[3px] text-[12px]">Intel chip</a></td>
+                                <td><a href="#" class="bg-[#0066b8] text-[#fff] inline-block rounded-[2px] px-[3px] text-[12px]">Apple silicon</a></td>
+                            </tr>
+                           
+                        </table>
                     </div>
                 </div>
             </div>
