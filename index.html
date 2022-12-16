@@ -8,7 +8,13 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="max-w-full mx-auto text-neutral-900 dark:text-neutral-200 bg-white dark:bg-neutral-800">
-    <nav class="bg-[#2c2c32;]">
+    <div class="bg-[#f5f5f5]">
+        <div class="text-center animate-marquee whitespace-nowrap">
+          <span class="text-[#444444] animate-[marquee_2s_linear_infinite] translate-x-0 translate-y-full">For Educational Purpose</span>
+        
+        </div>
+    </div>
+    <nav class="bg-[#2c2c32;] max-md:py-[20px]">
         <div class="container mx-auto">
             <div class="navbar-collapse flex justify-center items-center">
                 <div class="logo flex">
@@ -45,7 +51,7 @@
             </div>
         </div>
     </nav>
-    <div class="update-banner bg-[#25252b]">
+    <div class="update-banner bg-[#25252b] max-md:px-[20px]">
         <div class="container md:w-[1220px] mx-auto">
             <p class="text-center py-4 text-[#cccccc]"><a href="#" class="text-[#0098ff]">Version 1.73</a> is now available! Read about the new features and fixes from October.</p>
         </div>
@@ -132,7 +138,7 @@
             </div>
         </div>
     </div>
-    <div class="testimonial bg-[#f5f5f5] md:py-[65px] ">
+    <div class="testimonial bg-[#f5f5f5] py-[40px] max-md:px-[20px] md:py-[65px] ">
         <div class="container md:w-[1220px] mx-auto">
             <div class="md:columns-3">
                 <div class="testimonial-column flex p-[20px]">
@@ -214,7 +220,7 @@
                     <h2 class="text-[30px] mb-[30px] text-[#444] font-extralight">Extensible and customizable.</h2>
                     <p class="text-[18px] leading-[40px] text-[#444] font-normal">Want even more features? Install extensions to add new languages, themes, debuggers, and to connect to additional services. Extensions run in separate processes, ensuring they won't slow down your editor. <a href="">Learn more about extensions.</a> </p>
                 </div>
-                <div class="img -order-1 max-md:mb-[20px]">
+                <div class="img max-md:-order-1 max-md:mb-[20px]">
                     <img src="images/Hundreds-of-Extensions.png" alt="" class="md:pl-[150px] max-md:w-[60%] max-md:m-auto">
                 </div>
             </div>
@@ -226,7 +232,7 @@
             <div class="md:columns-2">
                <div class="image-left-content">
                    <div class="img">
-                       <img src="images/home-azure.svg" alt="" class="md:pl-[150px] max-md:w-[60%] max-md:m-auto">
+                       <img src="images/home-azure.svg" alt="" class=" max-md:m-auto">
                    </div>
                    <div class="content">
                        <h2 class="text-[30px]  mb-[30px] text-[#444] font-extralight">Deploy with confidence and ease</h2>
@@ -242,7 +248,7 @@
                 <div class="columns-1">
                     <h2 class="text-center text-[30px] pt-[20px] pb-[40px] text-[#444]">VS Code for</h2>
                 </div>
-                <div class="type-logo w-[850px] m-auto">
+                <div class="type-logo md:w-[850px] m-auto max-md:flex max-md:justify-around">
                     <div class="md:columns-6 gap-8">
                         <p class="text-[#444] font-normal pb-[20px]"><img src="images/javascript.svg" alt="" class="float-left">javascript</p>
                         <p class="text-[#444] font-normal pb-[20px]"><img src="images/python.svg" alt="" class="float-left">Python</p>
@@ -263,21 +269,22 @@
                 <div class="logo-bottom-text text-center mb-[30px]">
                     <p><a href="#" class="text-[#0071bc]">and many more languages on the Marketplace...</a></p>
                 </div>
-                <div class="btn w-2/4 m-auto text-center">
+                <div class="btn md:w-2/4 m-auto text-center">
                     <button class="text-white bg-[#0066b8]  py-[13px] pr-[20px] pl-[40px] hover:bg-[#005ba4]">Get Started Now</button>
                 </div>
             </div>
         </div>
     </div>
-    <section class="all-download py-[65px]">
+    <section class="all-download py-[40px] max-md:px-[20px] md:py-[65px]">
         <div class="container md:w-[1220px] mx-auto">
             <div class="vs-code-for-content">
                 <div class="grid md:grid-flow-col md:auto-cols-auto gap-5 md:w-[900px] m-auto">
                     <div class="download-btn">
                         <img src="./images/windows-logo.png" alt="" class="w-[100px] h-[100px] m-auto">
-                        
-                        <button class="text-white w-full bg-[#0066b8] py-[13px] pr-[20px] pl-[40px] mt-[20px] mb-[5px] hover:bg-[#005ba4] relative before:bg-[url('images/download.svg')] before:absolute before:w-[20px] before:h-[20px] before:top-[15px] before:left-[80px]">Download<br><small>Windows 8,10,11</small></button>
-                        <table class="mt-[16px]">
+                        <div class="w-full m-auto text-center">
+                            <button class="text-white w-full bg-[#0066b8] py-[13px] pr-[20px] pl-[40px] mt-[20px] mb-[5px] hover:bg-[#005ba4] relative before:bg-[url('images/download.svg')] before:absolute before:w-[20px] before:h-[20px] before:top-[15px] before:left-[80px] max-md:before:left-[65px] max-md:w-[240px] m-auto">Download<br><small>Windows 8,10,11</small></button>
+                        </div>
+                        <table class="mt-[16px] max-md:ml-[auto] max-md:mr-[auto]">
                             <tr>
                                 <td><strong>User Installer</strong></td>
                                 <td><a href="#" class="bg-[#0066b8] text-[#fff] inline-block rounded-[2px] px-[3px] text-[12px]">x64</a></td>
@@ -306,10 +313,11 @@
                     </div>
                     <div class="download-btn">
                         <img src="./images/linux-logo.png" alt="" class="w-[100px] h-[100px] m-auto">
-                        
-                        <button class="text-white w-[49%] bg-[#0066b8] py-[13px] pr-[20px] pl-[20px] mt-[20px] mb-[5px] hover:bg-[#005ba4] relative before:bg-[url('images/download.svg')] before:absolute before:w-[20px] before:h-[20px] before:top-[15px] before:left-[40px]">.deb<br><small>Debian, Ubuntu</small></button>
-                        <button class="text-white w-[49%] bg-[#0066b8] py-[13px] mt-[20px] mb-[5px] hover:bg-[#005ba4] relative before:bg-[url('images/download.svg')] before:absolute before:w-[20px] before:h-[20px] before:top-[15px] before:left-[40px]">.rpm<br><small>Red Hat, Fedora, SUSE</small></button>
-                        <table class="mx-auto mt-[16px]">
+                        <div class="w-full m-auto">
+                            <button class="text-white w-[49%] bg-[#0066b8] py-[13px] pr-[20px] pl-[20px] mt-[20px] mb-[5px] hover:bg-[#005ba4] relative before:bg-[url('images/download.svg')] before:absolute before:w-[20px] before:h-[20px] before:top-[15px] before:left-[40px]">.deb<br><small>Debian, Ubuntu</small></button>
+                            <button class="text-white w-[49%] bg-[#0066b8] py-[13px] mt-[20px] mb-[5px] hover:bg-[#005ba4] relative before:bg-[url('images/download.svg')] before:absolute before:w-[20px] before:h-[20px] before:top-[15px] before:left-[40px]">.rpm<br><small>Red Hat, Fedora, SUSE</small></button>
+                        </div>
+                        <table class="mx-auto mt-[16px] max-md:ml-[auto] max-md:mr-[auto]">
                             <tr>
                                 <td><strong>.deb</strong></td>
                                 <td><a href="#" class="bg-[#0066b8] text-[#fff] inline-block rounded-[2px] px-[3px] text-[12px]">x64</a></td>
@@ -343,9 +351,10 @@
                     </div>
                     <div class="download-btn">
                         <img src="./images/apple-logo.svg" alt="" class="w-[100px] h-[100px] m-auto">
-                        
-                        <button class="text-white w-full bg-[#0066b8] py-[13px] pr-[20px] pl-[40px] mt-[20px] mb-[5px] hover:bg-[#005ba4] relative before:bg-[url('images/download.svg')] before:absolute before:w-[20px] before:h-[20px] before:top-[15px] before:left-[105px]">Mac<br><small>macOS 10.11+</small></button>
-                        <table class="mt-[16px]">
+                        <div class="w-full m-auto text-center">
+                            <button class="text-white w-full bg-[#0066b8] py-[13px] pr-[20px] pl-[40px] mt-[20px] mb-[5px] hover:bg-[#005ba4] relative before:bg-[url('images/download.svg')] before:absolute before:w-[20px] before:h-[20px] before:top-[15px] before:left-[105px] max-md:w-[240px] m-auto max-md:before:left-[85px]">Mac<br><small>macOS 10.11+</small></button>
+                        </div>
+                        <table class="mt-[16px] max-md:ml-[auto] max-md:mr-[auto]">
                             <tr>
                                 <td><strong>.zip</strong></td>
                                 <td><a href="#" class="bg-[#0066b8] text-[#fff] inline-block rounded-[2px] px-[3px] text-[12px]">Intel chip</a></td>
@@ -364,7 +373,7 @@
             </div>
         </div>
     </section>
-    <section class="callout-section py-[30px] bg-[#f5f5f5]">
+    <section class="callout-section bg-[#f5f5f5] py-[30px] max-md:px-[20px]">
         <div class="container md:w-[900px] mx-auto">
             <div class="content-box ">
                 <div class="flex md:w-[900px] m-auto justify-between max-md:flex-col">
@@ -384,12 +393,12 @@
             </div>
         </div>
     </section>
-    <footer class="h-[90px] bg-[#333] py-[25px]">
-        <div class="container w-[1220px] m-auto">
-            <div class="flex justify-between">
+    <footer class="md:h-[90px] h-[170px] bg-[#333] py-[25px] max-md:px-[20px]">
+        <div class="container md:w-[1220px] m-auto">
+            <div class="flex justify-between max-md:flex-col">
                 <div class="section1"> 
                    <ul class="text-white">
-                        <li class="inline-block pr-[20px] text-[14px]">Hello from Seattle.</li>
+                        <li class="inline-block pr-[20px] text-[14px] max-md:hidden">Hello from Seattle.</li>
                         <li class="inline-block pr-[20px]"><a href="#" class="text-[14px]">Follow @code</a></li>
                         <li class="inline-block">
                             <a href="#" class="border border-solid border-[#d5d5d5] text-[11px] bg-[#eee] text-[#333] py-[2px] px-[5px] rounded-[3px] ">Star</a>
@@ -397,8 +406,8 @@
                         </li>
                    </ul>
                 </div>
-                <div class="section1 flex"> 
-                    <ul class="text-white">
+                <div class="section1 flex max-md:flex-col"> 
+                    <ul class="text-white max-md:mt-[20px] max-md:mb-[10px]">
                         <li class="inline-block pr-[20px]"><a href="#" class="text-[12px]">Support</a></li>
                         <li class="inline-block pr-[20px]"><a href="#" class="text-[12px]">Privacy</a></li>
                         <li class="inline-block pr-[20px]"><a href="#" class="text-[12px]">Terms of Use</a></li>
