@@ -13,7 +13,7 @@
             <div class="navbar-collapse flex justify-center items-center">
                 <div class="logo flex">
                     <a href="" class="flex items-center"><img src="images/logo.png" alt="" class="w-[30px] h-[30px]"><span class="text-white pl-[12px] pr-[20px]">Visual Studio Code</span></a>
-                    <div class="nav-item md:mr-[200px]">
+                    <div class="nav-item md:mr-[200px]  max-md:hidden">
                         <ul class="flex justify-center color-white">
                             <li class="px-[12px]"><a href="" class="text-white opacity-60 hover:opacity-100">Docs</a></li>
                             <li class="px-[12px]"><a href="" class="text-white opacity-60 hover:opacity-100">Updates</a></li>
@@ -26,7 +26,7 @@
                     </div>
                 </div>
                 
-                <div class="btn">
+                <div class="btn  max-md:hidden">
                     <ul class="flex">
                         <li>    
                             <form action="">
@@ -50,10 +50,10 @@
             <p class="text-center py-4 text-[#cccccc]"><a href="#" class="text-[#0098ff]">Version 1.73</a> is now available! Read about the new features and fixes from October.</p>
         </div>
     </div>
-    <div class="main bg-[#2c2c32] py-[30px]">
+    <div class="main bg-[#2c2c32] md:py-[30px]">
         <div class="container md:w-[1220px] mx-auto">
-            <div class="flex">
-                <div class="text text-white py-[50px] w-[32%]">
+            <div class="flex max-md:flex-col">
+                <div class="text text-white md:py-[50px] py-[20px] md:w-[32%]">
                     <h1 class="text-[55px] leading-[1.2em] text-center">Code editing. <strong>Redefined.</strong></h1>
                     <p class="text-center text-[18px] opacity-60">Free. Built on open source. Runs everywhere.</p>
                     <div class="download-button w-[85%] m-auto text-[18px] mt-[20px] flex">
@@ -95,7 +95,7 @@
                         <a href="#" class="text-[#0098ff]">other platforms</a>
                     </p>
                 </div>
-                <div class="image-screen pl-[40px]">
+                <div class="image-screen md:pl-[40px] max-md:px-[20px] max-md:pb-[20px]">
                     <img src="images/home-screenshot-linux-lg.png" alt="">
                 </div>
             </div>
@@ -103,7 +103,7 @@
     </div>
     <div class="service">
         <div class="md:container md:w-[1220px] mx-auto">
-            <div class="grid grid-cols-4">
+            <div class="grid grid-cols-2 md:grid-cols-4">
                 <div class="service-box text-center py-8 hover:bg-[#e3e3e3]">
                     <a href="#" class="text-xl text-[#444]">
                         <div class="img bg-no-repeat mb-4 w-[50px] h-[50px] m-auto bg-[length:12.6rem_6.4rem] hover:bg-[length:0_-5.3rem]" style="background-image: url('images/valueprops-top-sprite.svg');"></div>
@@ -132,7 +132,7 @@
             </div>
         </div>
     </div>
-    <div class="testimonial bg-[#f5f5f5] py-[65px]">
+    <div class="testimonial bg-[#f5f5f5] md:py-[65px] ">
         <div class="container md:w-[1220px] mx-auto">
             <div class="md:columns-3">
                 <div class="testimonial-column flex p-[20px]">
@@ -165,12 +165,12 @@
             </div>
         </div>
     </div>
-    <div class="left-image-right-content py-[65px]">
+    <div class="left-image-right-content py-[40px] max-md:px-[20px] md:py-[65px]">
         <div class="container md:w-[1220px] mx-auto">
             <div class="md:columns-2">
                <div class="image-left-content">
                    <div class="img">
-                       <img src="images/home-intellisense.svg" alt="">
+                       <img src="images/home-intellisense.svg" alt="" class="max-md:w-[60%] max-md:m-auto">
                    </div>
                    <div class="content">
                        <h2 class="text-[30px] mb-[30px] text-[#444] font-extralight">Meet IntelliSense.</h2>
@@ -180,57 +180,53 @@
             </div>
         </div>
     </div>
-    <div class="right-image-left-content bg-[#f5f5f5] py-[65px]">
+    <div class="right-image-left-content bg-[#f5f5f5] py-[40px] max-md:px-[20px] md:py-[65px]">
         <div class="container md:w-[1220px] mx-auto">
-            <div class="md:columns-2">
-               <div class="image-right-content">
-                    <div class="content">
-                        <h2 class="text-[30px] mb-[30px] text-[#444] font-extralight">Print statement debugging is a thing of the past.</h2>
-                        <p class="text-[18px] leading-[40px] text-[#444] font-normal">Debug code right from the editor. Launch or attach to your running apps and debug with break points, call stacks, and an interactive console.</p>
-                    </div>
-                   <div class="img">
-                       <img src="images/home-debug.svg" alt="" class="float-right">
-                   </div>
-               </div>
+            <div class="image-right-content flex md:justify-between max-md:flex-col-reverse ">
+                <div class="content md:w-[50%]">
+                    <h2 class="text-[30px] mb-[30px] text-[#444] font-extralight">Print statement debugging is a thing of the past.</h2>
+                    <p class="text-[18px] leading-[40px] text-[#444] font-normal">Debug code right from the editor. Launch or attach to your running apps and debug with break points, call stacks, and an interactive console.</p>
+                </div>
+                <div class="img">
+                    <img src="images/home-debug.svg" alt="" class="max-md:w-[60%] max-md:m-auto">
+                </div>
             </div>
         </div>
     </div>
-    <div class="left-image-right-content py-[65px]">
+    <div class="left-image-right-content py-[40px] max-md:px-[20px] md:py-[65px]">
+        <div class="container md:w-[1220px] mx-auto">
+            <div class="grid md:grid-cols-2">
+                <div class="img">
+                    <img src="images/home-git.svg" alt="" class="max-md:w-[60%] max-md:m-auto">
+                </div>
+                <div class="content">
+                    <h2 class="text-[30px] mb-[30px] text-[#444] font-extralight">Git commands built-in.</h2>
+                    <p class="text-[18px] leading-[40px] text-[#444] font-normal">Working with Git and other SCM providers has never been easier. Review diffs, stage files, and make commits right from the editor. Push and pull from any hosted SCM service.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="right-image-left-content bg-[#f5f5f5] py-[40px] max-md:px-[20px] md:py-[65px]">
+        <div class="container md:w-[1220px] mx-auto">
+            
+            <div class="grid md:grid-cols-2">
+                <div class="content">
+                    <h2 class="text-[30px] mb-[30px] text-[#444] font-extralight">Extensible and customizable.</h2>
+                    <p class="text-[18px] leading-[40px] text-[#444] font-normal">Want even more features? Install extensions to add new languages, themes, debuggers, and to connect to additional services. Extensions run in separate processes, ensuring they won't slow down your editor. <a href="">Learn more about extensions.</a> </p>
+                </div>
+                <div class="img -order-1 max-md:mb-[20px]">
+                    <img src="images/Hundreds-of-Extensions.png" alt="" class="md:pl-[150px] max-md:w-[60%] max-md:m-auto">
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    <div class="left-image-right-content py-[40px] max-md:px-[20px] md:py-[65px]">
         <div class="container md:w-[1220px] mx-auto">
             <div class="md:columns-2">
                <div class="image-left-content">
                    <div class="img">
-                       <img src="images/home-git.svg" alt="">
-                   </div>
-                   <div class="content">
-                       <h2 class="text-[30px] mb-[30px] text-[#444] font-extralight">Git commands built-in.</h2>
-                       <p class="text-[18px] leading-[40px] text-[#444] font-normal">Working with Git and other SCM providers has never been easier. Review diffs, stage files, and make commits right from the editor. Push and pull from any hosted SCM service.</p>
-                   </div>
-               </div>
-            </div>
-        </div>
-    </div>
-    <div class="right-image-left-content bg-[#f5f5f5] py-[65px]">
-        <div class="container md:w-[1220px] mx-auto">
-            <div class="md:columns-2">
-               <div class="image-right-content">
-                    <div class="content">
-                        <h2 class="text-[30px] mb-[30px] text-[#444] font-extralight">Extensible and customizable.</h2>
-                        <p class="text-[18px] leading-[40px] text-[#444] font-normal">Want even more features? Install extensions to add new languages, themes, debuggers, and to connect to additional services. Extensions run in separate processes, ensuring they won't slow down your editor. <a href="">Learn more about extensions.</a> </p>
-                    </div>
-                   <div class="img">
-                       <img src="images/Hundreds-of-Extensions.png" alt="" class="pl-[150px]">
-                   </div>
-               </div>
-            </div>
-        </div>
-    </div>
-    <div class="left-image-right-content py-[65px]">
-        <div class="container md:w-[1220px] mx-auto">
-            <div class="md:columns-2">
-               <div class="image-left-content">
-                   <div class="img">
-                       <img src="images/home-azure.svg" alt="">
+                       <img src="images/home-azure.svg" alt="" class="md:pl-[150px] max-md:w-[60%] max-md:m-auto">
                    </div>
                    <div class="content">
                        <h2 class="text-[30px]  mb-[30px] text-[#444] font-extralight">Deploy with confidence and ease</h2>
@@ -240,14 +236,14 @@
             </div>
         </div>
     </div>
-    <div class="vs-code-for py-[65px] bg-[#f5f5f5]">
+    <div class="vs-code-for bg-[#f5f5f5] py-[40px] max-md:px-[20px] md:py-[65px]">
         <div class="container md:w-[1220px] mx-auto">
             <div class="vs-code-for-content">
                 <div class="columns-1">
                     <h2 class="text-center text-[30px] pt-[20px] pb-[40px] text-[#444]">VS Code for</h2>
                 </div>
                 <div class="type-logo w-[850px] m-auto">
-                    <div class="columns-6 gap-8">
+                    <div class="md:columns-6 gap-8">
                         <p class="text-[#444] font-normal pb-[20px]"><img src="images/javascript.svg" alt="" class="float-left">javascript</p>
                         <p class="text-[#444] font-normal pb-[20px]"><img src="images/python.svg" alt="" class="float-left">Python</p>
                         <p class="text-[#444] font-normal pb-[20px]"><img src="images/java.svg" alt="" class="float-left">Java</p>
@@ -255,7 +251,7 @@
                         <p class="text-[#444] font-normal pb-[20px]"><img src="images/typescript.svg" alt="" class="float-left">TypeScript</p>
                         <p class="text-[#444] font-normal pb-[20px]"><img src="images/cpp.svg" alt="" class="float-left">C/C++</p>
                     </div>
-                    <div class="columns-6 gap-8">
+                    <div class="md:columns-6 gap-8">
                         <p class="text-[#444] font-normal pb-[20px]"><img src="images/json.svg" alt="" class="float-left">JSON</p>
                         <p class="text-[#444] font-normal pb-[20px]"><img src="images/powershell.svg" alt="" class="float-left">Powershell</p>
                         <p class="text-[#444] font-normal pb-[20px]"><img src="images/html.svg" alt="" class="float-left">HTML/CSS</p>
@@ -276,7 +272,7 @@
     <section class="all-download py-[65px]">
         <div class="container md:w-[1220px] mx-auto">
             <div class="vs-code-for-content">
-                <div class="grid grid-flow-col auto-cols-auto gap-5 w-[900px] m-auto">
+                <div class="grid md:grid-flow-col md:auto-cols-auto gap-5 md:w-[900px] m-auto">
                     <div class="download-btn">
                         <img src="./images/windows-logo.png" alt="" class="w-[100px] h-[100px] m-auto">
                         
@@ -369,9 +365,9 @@
         </div>
     </section>
     <section class="callout-section py-[30px] bg-[#f5f5f5]">
-        <div class="container w-[900px] mx-auto">
+        <div class="container md:w-[900px] mx-auto">
             <div class="content-box ">
-                <div class="flex w-[900px] m-auto justify-between">
+                <div class="flex md:w-[900px] m-auto justify-between max-md:flex-col">
                     <div class="box text-center">
                         <h2 class="text-[21px] my-[20px] text-[#444] font-semibold">Want new features sooner?</h2>
                         <p class="text-[18px] text-[#444] mb-[10px]">Get the <a href="#" class="text-[#0071bc]">Insiders build</a> instead.</p>
